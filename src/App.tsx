@@ -8,7 +8,7 @@ function App({ product, user }: { product: Product; user: User }) {
   const [cart, addToCart] = useCart();
 
   return (
-    <div>
+    <div className="bg-gray-med">
       <Header cart={cart} user={user} />
 
       <main className="grid grid-cols-1 md:grid-cols-2 grid-rows-auto gap-2">
