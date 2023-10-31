@@ -1,6 +1,6 @@
-# coducks
+# NerdNest3D
 
-Demo app for "Codux Live: Building an eComm product page ft. RadixUI &amp; TailwindCSS"
+An app for hosting and selling our custom 3D printed designs.
 
 In this project we build the UI for an ecommerce product page, using TailwindCSS
 for styling and RadixUI for building the more complex UI elements. Throughout,
