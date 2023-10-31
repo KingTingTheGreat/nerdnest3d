@@ -1,8 +1,8 @@
-import imgUrl1 from "./assets/images/product-images/rubber-ducky/duckies_1.png";
-import imgUrl2 from "./assets/images/product-images/rubber-ducky/duckies_2.jpg";
-import imgUrl3 from "./assets/images/product-images/rubber-ducky/duckies_3.jpg";
-import imgUrl4 from "./assets/images/product-images/rubber-ducky/duckies_4.jpg";
-import imgUrl5 from "./assets/images/product-images/rubber-ducky/duckies_5.jpg";
+import imgUrl1 from "../assets/images/product-images/rubber-ducky/duckies_1.png";
+import imgUrl2 from "../assets/images/product-images/rubber-ducky/duckies_2.jpg";
+import imgUrl3 from "../assets/images/product-images/rubber-ducky/duckies_3.jpg";
+import imgUrl4 from "../assets/images/product-images/rubber-ducky/duckies_4.jpg";
+import imgUrl5 from "../assets/images/product-images/rubber-ducky/duckies_5.jpg";
 
 export const RUBBER_DUCKY = {
     id: "1234",
