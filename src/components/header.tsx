@@ -2,19 +2,19 @@ import * as NavigationMenu from "@radix-ui/react-navigation-menu";
 import type { Cart, User } from "../types";
 import { CartIcon, UserIcon } from "./icons";
 import { CartDetails, UserDetails } from "./details";
+import { Logo } from "./logo";
 
 export const Header = ({ cart, user }: { cart: Cart; user?: User }) => {
   return (
-    <header className="bg-blue p-5 w-100 flex justify-between items-center">
-      <h1 className="text-yellow text-4xl font-bold leading-[28px]">
-        <span className="text-white">co</span>ducks
-      </h1>
+    <header className="bg-gray-dark p-5 w-100 flex justify-between items-center">
+      <Logo />
       <NavigationMenu.Root className="">
         <NavigationMenu.List className="flex gap-[10px] items-center justify-between text-xl">
           <NavigationMenu.Item key="about" className="">
             <NavigationMenu.Link
               className="flex items-center pr-5 text-white hover:text-yellow"
-              href="https://codux.com"
+              href="https://github.com/KingTingTheGreat/nerdnest3d"
+              target="_blank"
             >
               About us
             </NavigationMenu.Link>
