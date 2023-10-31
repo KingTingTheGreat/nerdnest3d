@@ -50,3 +50,19 @@ Project set up:
 - In Codux, open the repository as a Codux project
 - Run the "Install" script in Codux (or `npm i` on the command line) to install the project dependencies
 - Follow along with the webinar! Use the branches if needed to catch up or "reset" to a checkpoint.
+
+## To test locally
+
+First, run the development server:
+
+```bash
+npm run dev
+```
+
+Open with your browser to see the result.
+
+## Our final product will be deployed on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
