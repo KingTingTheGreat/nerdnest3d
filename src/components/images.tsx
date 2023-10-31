@@ -37,7 +37,7 @@ export const Images = ({ images }: { images: Image[] }) => {
           <AspectRatio.Root
             className={
               "h-full border-4 rounded p-1 " +
-              (i === activeIndex ? "border-yellow" : "border-white")
+              (i === activeIndex ? "border-gray-light" : "border-black")
             }
             key={i}
             ratio={1 / 1}
