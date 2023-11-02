@@ -1,12 +1,8 @@
-import imgUrl1 from "./product-images/rubber-ducky/duckies_1.png";
-import imgUrl2 from "./product-images/rubber-ducky/duckies_2.jpg";
-import imgUrl3 from "./product-images/rubber-ducky/duckies_3.jpg";
-import imgUrl4 from "./product-images/rubber-ducky/duckies_4.jpg";
-import imgUrl5 from "./product-images/rubber-ducky/duckies_5.jpg";
+import * as images from "./product-images/rubber-ducky/rubber-ducky-images";
 
 export const RUBBER_DUCKY = {
     id: "1234",
-    name: "Rubber Ducky Debugging Buddy",
+    name: "Rubber Ducky: Debugging Buddy",
     description:
         "Never code alone when you've got this rubber ducky on your desk!",
     features: [
@@ -15,27 +11,28 @@ export const RUBBER_DUCKY = {
         "Helps you become the best coder you can be",
         "Floats",
     ],
+    preview_image: images.img1,
     images: [
         {
-            url: imgUrl1,
+            url: images.img1,
             title: "The most loyal & helpful coworker you will ever have",
             alt: "sitting on a laptop keyboard",
         },
         {
-            url: imgUrl2,
+            url: images.img2,
             title: "No matter how big the bug, ducky is there for you",
             alt: "sitting next to another ducky, both facing the camera",
         },
         {
-            url: imgUrl3,
+            url: images.img3,
             alt: "sitting next to another ducky, both in profile facing left",
         },
         {
-            url: imgUrl4,
+            url: images.img4,
             alt: "swimming in different directions on a blue surface",
         },
         {
-            url: imgUrl5,
+            url: images.img5,
             alt: "sitting in profile facing another ducky sitting facing the camera",
         },
     ],
@@ -59,6 +56,7 @@ export const RUBBER_DUCKY = {
             date: new Date(2022, 10, 30).valueOf(),
         },
     ],
-    price: 29.95,
+    price: 9.95,
     sizes: ["S", "M", "L", "XL"],
+    colors: ["yellow"],
 };
