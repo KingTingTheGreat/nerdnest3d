@@ -1,5 +1,5 @@
 import img1 from './saber-stand-1.png';
-import img2 from './saber-stand-2.jpeg';
+import img2 from './saber-stand-2.jfif';
 import img3 from './saber-stand-3.jpg';
 
 export const images = [
