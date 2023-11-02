@@ -3,6 +3,7 @@ import { Images } from './components/images';
 import { ProductGrid } from './components/product-grid';
 import { useCart } from './hooks';
 import type { Product, User } from './types';
+import { ProductPreview } from './components/product-preview';
 
 function App({ products, user }: { products: Product[]; user: User }) {
     const [cart, addToCart] = useCart();
@@ -12,7 +13,8 @@ function App({ products, user }: { products: Product[]; user: User }) {
             <Header cart={cart} user={user} />
 
             <main>
-                <ProductGrid products={products} addToCart={addToCart} />
+                {/* <ProductGrid products={products} addToCart={addToCart} /> */}
+                <ProductPreview products={products} />
             </main>
 
             <footer className="text-center text-sm p-5">
