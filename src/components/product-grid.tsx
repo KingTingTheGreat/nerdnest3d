@@ -2,8 +2,6 @@ import { useState } from 'react';
 import * as ToggleGroup from '@radix-ui/react-toggle-group';
 import { RatingAverage } from './reviews';
 import type { CartItem, Product } from '../types';
-import { Images } from './images';
-import { PRODUCTS } from '../data';
 
 export const ProductGrid = ({
     products,
