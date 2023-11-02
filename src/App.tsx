@@ -12,7 +12,7 @@ function App({ products, user }: { products: Product[]; user: User }) {
         <div className="bg-gray-light">
             <Header cart={cart} user={user} />
 
-            <main>
+            <main className="flex justify-center">
                 {/* <ProductGrid products={products} addToCart={addToCart} /> */}
                 <ProductPreview products={products} />
             </main>
