@@ -1,19 +1,18 @@
 import { Header } from "./components/header";
 import { Images } from "./components/images";
-import { ProductInfo } from "./components/product-info";
+import { ProductGrid } from "./components/product-grid";
 import { useCart } from "./hooks";
 import type { Product, User } from "./types";
 
-function App({ product, user }: { product: Product; user: User }) {
+function App({ products, user }: { products: Product[]; user: User }) {
   const [cart, addToCart] = useCart();
 
   return (
     <div className="bg-gray-light">
       <Header cart={cart} user={user} />
 
-      <main className="grid grid-cols-1 md:grid-cols-2 grid-rows-auto gap-2">
-        <Images images={product.images} />
-        <ProductInfo product={product} addToCart={addToCart} />
+      <main>
+        <ProductGrid products={products} addToCart={addToCart} />
       </main>
 
       <footer className="text-center text-sm p-5">
