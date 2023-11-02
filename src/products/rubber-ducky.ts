@@ -1,4 +1,4 @@
-import * as images from "./product-images/rubber-ducky/rubber-ducky-images";
+import { images } from "./product-images/rubber-ducky/rubber-ducky-images";
 
 export const RUBBER_DUCKY = {
     id: "1234",
@@ -11,31 +11,8 @@ export const RUBBER_DUCKY = {
         "Helps you become the best coder you can be",
         "Floats",
     ],
-    preview_image: images.img1,
-    images: [
-        {
-            url: images.img1,
-            title: "The most loyal & helpful coworker you will ever have",
-            alt: "sitting on a laptop keyboard",
-        },
-        {
-            url: images.img2,
-            title: "No matter how big the bug, ducky is there for you",
-            alt: "sitting next to another ducky, both facing the camera",
-        },
-        {
-            url: images.img3,
-            alt: "sitting next to another ducky, both in profile facing left",
-        },
-        {
-            url: images.img4,
-            alt: "swimming in different directions on a blue surface",
-        },
-        {
-            url: images.img5,
-            alt: "sitting in profile facing another ducky sitting facing the camera",
-        },
-    ],
+    preview_image: images[0],
+    images: images,
     reviews: [
         { rating: 5, text: "So impressed!", date: new Date(2023, 6, 13).valueOf() },
         { rating: 5, date: new Date(2023, 4, 10).valueOf() },
