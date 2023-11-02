@@ -1,4 +1,4 @@
-import * as images from "./product-images/saber-stand/saber-stand-images";
+import { images } from "./product-images/saber-stand/saber-stand-images";
 
 export const SABER_STAND = {
     id: "0104",
@@ -10,23 +10,8 @@ export const SABER_STAND = {
         "Easily attaches and detaches from the wall",
         "Light swords can effortlessly be hung up and brought down",
     ],
-    preview_image: images.img1,
-    images: [
-        {
-            url: images.img1,
-            title: "The most loyal & helpful coworker you will ever have",
-            alt: "mounted on a wall",
-        },
-        {
-            url: images.img2,
-            title: "No matter how big the bug, ducky is there for you",
-            alt: "showing how the light sword is mounted",
-        },
-        {
-            url: images.img3,
-            alt: "shows how the product is mounted to the wall",
-        },
-    ],
+    preview_image: images[0],
+    images: images,
     reviews: [
         { rating: 5, text: "So impressed!", date: new Date(2023, 6, 13).valueOf() },
         { rating: 5, date: new Date(2023, 4, 10).valueOf() },
