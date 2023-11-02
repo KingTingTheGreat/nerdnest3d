@@ -1,9 +1,9 @@
-import { useState } from "react";
-import * as ToggleGroup from "@radix-ui/react-toggle-group";
-import { RatingAverage } from "./reviews";
-import type { CartItem, Product } from "../types";
-import { Images } from "./images";
-import { PRODUCTS } from "../data";
+import { useState } from 'react';
+import * as ToggleGroup from '@radix-ui/react-toggle-group';
+import { RatingAverage } from './reviews';
+import type { CartItem, Product } from '../types';
+import { Images } from './images';
+import { PRODUCTS } from '../data';
 
 export const ProductGrid = ({
     products,
@@ -15,8 +15,8 @@ export const ProductGrid = ({
     return (
         <div className="display-grid">
             {products.map(function (product) {
-                const [size, setSize] = useState("");
-                const [color, setColor] = useState("");
+                const [size, setSize] = useState('');
+                const [color, setColor] = useState('');
                 const item = { product, size: size, color: color, quantity: 1 };
                 return (
                     <div className="flex flex-col gap-5 p-5">
@@ -26,8 +26,14 @@ export const ProductGrid = ({
                         </h2>
                         <RatingAverage reviews={product.reviews} />
                         <div className="flex justify-between items-end">
-                            <SizeToggle sizes={product.sizes} onChange={(s) => setSize(s)} />
-                            <ColorToggle colors={product.colors} onChange={(c) => setColor(c)} />
+                            <SizeToggle
+                                sizes={product.sizes}
+                                onChange={(s) => setSize(s)}
+                            />
+                            <ColorToggle
+                                colors={product.colors}
+                                onChange={(c) => setColor(c)}
+                            />
                         </div>
                         <button
                             className="bg-black disabled:bg-gray-dark text-white px-5 py-2 rounded font-medium"
@@ -38,17 +44,17 @@ export const ProductGrid = ({
                         </button>
                         <p>{product.description}</p>
                     </div>
-                )
+                );
             })}
         </div>
-    )
+    );
 };
 
 export const SizeToggle = ({
     sizes,
     onChange,
 }: {
-    sizes: Product["sizes"];
+    sizes: Product['sizes'];
     onChange: (s: string) => void;
 }) => {
     return (
@@ -80,7 +86,7 @@ export const ColorToggle = ({
     colors,
     onChange,
 }: {
-    colors: Product["colors"];
+    colors: Product['colors'];
     onChange: (s: string) => void;
 }) => {
     return (
