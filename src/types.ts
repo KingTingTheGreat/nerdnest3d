@@ -13,12 +13,14 @@ export type User = {
 export interface Product {
   id: string;
   name: string;
-  images: Image[];
   description: string;
   features: string[];
+  preview: Image;
+  images: Image[];
   reviews: Review[];
   price: number;
   sizes: string[];
+  colors: string[];
 }
 
 export type Image = {
