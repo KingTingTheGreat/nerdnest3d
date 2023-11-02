@@ -3,7 +3,7 @@ import { images } from './product-images/pen-replacement/pen-replacement-images'
 export const PEN_REPLACEMENT = {
     id: '1003',
     name: 'Pen Replacement',
-    description: 'Customize the look of your pen!',
+    description: 'Customize the look of your 4 color Bic pen!',
     features: [
         'Customize your pen',
         'Glows in the dark',
