@@ -1,6 +1,8 @@
 import { createBoard } from '@wixc3/react-board';
 import { CartIcon } from '../../components/icons';
-import { RUBBER_DUCKY } from '../../data';
+import { PRODUCTS } from '../../data';
+
+const RUBBER_DUCKY = PRODUCTS[0];
 
 export default createBoard({
     name: 'Cart',

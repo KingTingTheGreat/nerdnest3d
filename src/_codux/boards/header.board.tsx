@@ -1,6 +1,9 @@
 import { createBoard } from '@wixc3/react-board';
 import { Header } from '../../components/header';
-import { RUBBER_DUCKY, SCROOGE } from '../../data';
+import { PRODUCTS, user } from '../../data';
+
+const RUBBER_DUCKY = PRODUCTS[0];
+const SCROOGE = user();
 
 export default createBoard({
     name: 'Header',
