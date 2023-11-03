@@ -1,4 +1,11 @@
 /** @type {import('tailwindcss').Config} */
+
+// defaults values for height and width to percent
+const percentConfig = {};
+for (let i = 1; i <= 100; i++) {
+  percentConfig[i] = `${i}%`;
+};
+
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
@@ -14,6 +21,8 @@ module.exports = {
         'logo-purple': "#9B59B6",
         'logo-green': "#26C281",
       },
+      width: percentConfig,
+      height: percentConfig,
     },
   },
   plugins: [],
