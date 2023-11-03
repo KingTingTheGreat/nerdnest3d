@@ -2,7 +2,7 @@ import { images } from './product-images/rubber-ducky/rubber-ducky-images';
 
 export const RUBBER_DUCKY = {
     id: '1234',
-    name: 'Rubber Ducky: Debugging Buddy',
+    name: 'Rubber Ducky',
     description:
         "Never code alone when you've got this rubber ducky on your desk!",
     features: [
