@@ -6,6 +6,7 @@ export const Preview = ({ image }: { image: Image }) => {
         <div className="relative w-full">
             <AspectRatio.Root className="relative" key="active" ratio={1 / 1}>
                 <img
+                    loading="lazy"
                     className="h-full bg-gray-med object-cover max-width-xs"
                     src={image.url}
                     alt={image.alt || image.title}
