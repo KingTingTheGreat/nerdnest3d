@@ -24,14 +24,14 @@ export const SHARK_GUITAR_PICK = {
             date: new Date(2023, 1, 1).valueOf(),
         },
         {
-            rating: 1,
-            text: 'Useless. Did not fix my bug :(',
+            rating: 5,
+            text: 'Great! I love him!',
             date: new Date(2022, 12, 15).valueOf(),
         },
         { rating: 4, date: new Date(2022, 11, 11).valueOf() },
         {
-            rating: 3,
-            text: 'Meh, ok I guess',
+            rating: 4,
+            text: "He's so cute",
             date: new Date(2022, 10, 30).valueOf(),
         },
     ],
