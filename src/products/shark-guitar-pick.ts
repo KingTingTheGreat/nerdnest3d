@@ -19,8 +19,8 @@ export const SHARK_GUITAR_PICK = {
         },
         { rating: 5, date: new Date(2023, 4, 10).valueOf() },
         {
-            rating: 4,
-            text: 'Pretty good duck. I just wish it came with sunglasses.',
+            rating: 4.5,
+            text: 'Pretty good pick. I just wish it came with more than one.',
             date: new Date(2023, 1, 1).valueOf(),
         },
         {

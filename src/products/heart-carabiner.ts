@@ -10,25 +10,23 @@ export const HEART_CARABINER = {
     reviews: [
         {
             rating: 5,
-            text: 'So impressed!',
+            text: 'So cute!',
             date: new Date(2023, 6, 13).valueOf(),
         },
-        { rating: 5, date: new Date(2023, 4, 10).valueOf() },
         {
-            rating: 4,
-            text: 'Pretty good duck. I just wish it came with sunglasses.',
+            rating: 3,
+            text: 'Broke. Just like my heart.',
+            date: new Date(2023, 4, 10).valueOf(),
+        },
+        {
+            rating: 5,
+            text: 'Made a great gift for my girlfriend <3',
             date: new Date(2023, 1, 1).valueOf(),
         },
         {
-            rating: 1,
-            text: 'Useless. Did not fix my bug :(',
+            rating: 2,
+            text: 'Not a good carabiner. Broke under light load.',
             date: new Date(2022, 12, 15).valueOf(),
-        },
-        { rating: 4, date: new Date(2022, 11, 11).valueOf() },
-        {
-            rating: 3,
-            text: 'Meh, ok I guess',
-            date: new Date(2022, 10, 30).valueOf(),
         },
     ],
     price: 14.95,
