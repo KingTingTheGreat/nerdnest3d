@@ -2,16 +2,23 @@ import { useState } from 'react';
 import * as ToggleGroup from '@radix-ui/react-toggle-group';
 import { RatingAverage } from './reviews';
 import type { CartItem, Product } from '../types';
+import { useParams } from 'react-router-dom';
+import { ProductsById } from '../data';
 
 export const ProductPage = ({
-    product,
     addToCart,
 }: {
-    product: Product;
     addToCart: (item: CartItem) => void;
 }) => {
+    const { productId } = useParams();
+
+    if (!productId) return null;
+
+    const product = ProductsById[productId];
     const [size, setSize] = useState('');
-    const item = { product, size: size, quantity: 1 };
+    const [color, setColor] = useState('');
+    const [quantity, setQuantity] = useState(1);
+    const item = { product, size: size, color, quantity };
 
     return (
         <div className="flex flex-col gap-5 p-5">
@@ -25,6 +32,10 @@ export const ProductPage = ({
                 <SizeToggle
                     sizes={product.sizes}
                     onChange={(s) => setSize(s)}
+                />
+                <ColorToggle
+                    sizes={product.colors}
+                    onChange={(s) => setColor(s)}
                 />
                 <button
                     className="bg-black disabled:bg-gray-dark text-white px-5 py-2 rounded font-medium"
