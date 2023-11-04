@@ -4,6 +4,7 @@ import { RatingAverage } from './reviews';
 import type { CartItem, Product } from '../types';
 import { useParams } from 'react-router-dom';
 import { ProductsById } from '../data';
+import { Images } from './images';
 
 export const ProductPage = ({
     addToCart,
@@ -21,32 +22,34 @@ export const ProductPage = ({
     const item = { product, size: size, color, quantity };
 
     return (
-        <div className="flex flex-col gap-5 p-5">
-            <h2 className="flex justify-between text-3xl font-normal">
-                <span className="w-2/3">{product.name}</span>
-                <span>${product.price}</span>
-            </h2>
-            <RatingAverage reviews={product.reviews} />
+        <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-auto gap-2">
+            <Images images={product.images} />
+            <div className="flex flex-col gap-5 p-5">
+                <h2 className="flex justify-between text-3xl font-normal">
+                    <span className="w-2/3">{product.name}</span>
+                    <span>${product.price}</span>
+                    <RatingAverage reviews={product.reviews} />
+                </h2>
+                <div className="flex justify-between items-end">
+                    <SizeToggle
+                        sizes={product.sizes}
+                        onChange={(s) => setSize(s)}
+                    />
+                    <ColorToggle
+                        sizes={product.colors}
+                        onChange={(s) => setColor(s)}
+                    />
+                    <button
+                        className="bg-black disabled:bg-gray-dark text-white px-5 py-2 rounded font-medium"
+                        disabled={!size}
+                        onClick={() => addToCart(item)}
+                    >
+                        Add to Cart
+                    </button>
+                </div>
 
-            <div className="flex justify-between items-end">
-                <SizeToggle
-                    sizes={product.sizes}
-                    onChange={(s) => setSize(s)}
-                />
-                <ColorToggle
-                    sizes={product.colors}
-                    onChange={(s) => setColor(s)}
-                />
-                <button
-                    className="bg-black disabled:bg-gray-dark text-white px-5 py-2 rounded font-medium"
-                    disabled={!size}
-                    onClick={() => addToCart(item)}
-                >
-                    Add to Cart
-                </button>
+                <p>{product.description}</p>
             </div>
-
-            <p>{product.description}</p>
         </div>
     );
 };
