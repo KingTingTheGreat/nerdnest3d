@@ -3,7 +3,7 @@ import * as ToggleGroup from '@radix-ui/react-toggle-group';
 import { RatingAverage } from './reviews';
 import type { CartItem, Product } from '../types';
 
-export const ProductInfo = ({
+export const ProductPage = ({
     product,
     addToCart,
 }: {
