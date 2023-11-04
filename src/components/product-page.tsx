@@ -22,15 +22,16 @@ export const ProductPage = ({
     const item = { product, size: size, color, quantity };
 
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-auto gap-2">
+        // <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-auto gap-2">
+        <div className="flex justify-around">
             <Images images={product.images} />
             <div className="flex flex-col gap-5 p-5">
-                <h2 className="flex justify-between text-3xl font-normal">
+                <h2 className="flex flex-col justify-between text-3xl font-normal">
                     <span className="w-2/3">{product.name}</span>
                     <span>${product.price}</span>
                     <RatingAverage reviews={product.reviews} />
                 </h2>
-                <div className="flex justify-between items-end">
+                <div className="flex flex-col justify-between items-end">
                     <SizeToggle
                         sizes={product.sizes}
                         onChange={(s) => setSize(s)}
