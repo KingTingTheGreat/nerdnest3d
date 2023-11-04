@@ -1,6 +1,4 @@
 import { Header } from './components/header';
-import { Images } from './components/images';
-import { ProductGrid } from './components/product-grid';
 import { useCart } from './hooks';
 import type { Product, User } from './types';
 import { ProductPreview } from './components/product-preview';

@@ -1,8 +1,8 @@
 import { createBoard } from '@wixc3/react-board';
 import { Images } from '../../components/images';
-import { PRODUCTS } from '../../data';
+import { Products } from '../../data';
 
-const RUBBER_DUCKY = PRODUCTS[0];
+const RUBBER_DUCKY = Products[0];
 
 export default createBoard({
     name: 'Images',
