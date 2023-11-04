@@ -7,13 +7,9 @@ import { XSHOT_LONGSHOT_BARREL } from './products/xshot-longshot-barrel';
 
 import { SCROOGE } from './users/scrooge';
 
-// export function products() {
-//   return (
-//     [RUBBER_DUCKY, SABER_STAND]
-//   )
-// };
+import { Product } from './types';
 
-export const PRODUCTS = [
+export const Products = [
     RUBBER_DUCKY,
     SABER_STAND,
     HEART_CARABINER,
@@ -21,6 +17,13 @@ export const PRODUCTS = [
     SHARK_GUITAR_PICK,
     XSHOT_LONGSHOT_BARREL,
 ];
+
+// export const PruductsByName: { [name: string]: Product } = {};
+export const ProductsById: { [key: string]: Product } = {};
+for (const product of Products) {
+    // PruductsByName[product.name] = product;
+    ProductsById[product.id] = product;
+}
 
 export function user() {
     return SCROOGE;
