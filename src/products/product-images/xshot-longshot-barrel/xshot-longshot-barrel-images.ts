@@ -1,5 +1,5 @@
-import img1 from './xshot-longshot-barrel-1.png';
-import img2 from './xshot-longshot-barrel-2.png';
+import img1 from './xshot-longshot-barrel-1.webp';
+import img2 from './xshot-longshot-barrel-2.webp';
 
 export const images = [
     {

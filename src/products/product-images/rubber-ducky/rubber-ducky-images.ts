@@ -1,8 +1,8 @@
-import img1 from './duckies_1.png';
-import img2 from './duckies_2.jpg';
-import img3 from './duckies_3.jpg';
-import img4 from './duckies_4.jpg';
-import img5 from './duckies_5.jpg';
+import img1 from './rubber-ducky-1.webp';
+import img2 from './rubber-ducky-2.webp';
+import img3 from './rubber-ducky-3.webp';
+import img4 from './rubber-ducky-4.webp';
+import img5 from './rubber-ducky-5.webp';
 
 export const images = [
     {

@@ -1,5 +1,5 @@
-import img1 from './pen-replacement-1.png';
-import img2 from './pen-replacement-2.png';
+import img1 from './pen-replacement-1.webp';
+import img2 from './pen-replacement-2.webp';
 
 export const images = [
     {

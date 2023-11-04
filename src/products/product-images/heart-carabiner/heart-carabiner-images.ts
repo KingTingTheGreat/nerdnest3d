@@ -1,5 +1,5 @@
-import img1 from './heart-carabiner-1.png';
-import img2 from './heart-carabiner-2.png';
+import img1 from './heart-carabiner-1.webp';
+import img2 from './heart-carabiner-2.webp';
 
 export const images = [
     {

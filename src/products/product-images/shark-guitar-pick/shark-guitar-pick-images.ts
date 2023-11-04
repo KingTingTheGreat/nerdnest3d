@@ -1,6 +1,6 @@
-import img1 from './shark-guitar-pick-1.png';
-import img2 from './shark-guitar-pick-2.png';
-import img3 from './shark-guitar-pick-3.png';
+import img1 from './shark-guitar-pick-1.webp';
+import img2 from './shark-guitar-pick-2.webp';
+import img3 from './shark-guitar-pick-3.webp';
 
 export const images = [
     {
