@@ -55,7 +55,7 @@ export const ProductPage = ({
     );
 };
 
-export const SizeToggle = ({
+const SizeToggle = ({
     sizes,
     onChange,
 }: {
@@ -87,7 +87,7 @@ export const SizeToggle = ({
     );
 };
 
-export const ColorToggle = ({
+const ColorToggle = ({
     sizes,
     onChange,
 }: {

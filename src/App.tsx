@@ -4,8 +4,10 @@ import type { Product, User } from './types';
 import { ProductPreview } from './components/product-preview';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { ProductPage } from './components/product-page';
+import { Products, ProductsById } from './data';
+import { user } from './data';
 
-function App({ products, user }: { products: Product[]; user: User }) {
+function App() {
     const [cart, addToCart] = useCart();
 
     return (
@@ -17,7 +19,7 @@ function App({ products, user }: { products: Product[]; user: User }) {
                     <Routes>
                         <Route
                             path="/"
-                            element={<ProductPreview products={products} />}
+                            element={<ProductPreview products={Products} />}
                         />
                         <Route
                             path="/products/:productId"
