@@ -8,8 +8,7 @@ export const ProductPreview = ({ products }: { products: Product[] }) => {
         <div className="flex justify-center items-center w-full">
             <div className="flex flex-wrap justify-center w-90% bg-gray-white">
                 {products.map(function (product: Product) {
-                    const { id, preview, name, price, description, reviews } =
-                        product;
+                    const { preview, name, price, summary, reviews } = product;
                     return (
                         <Link
                             to={`/products/${product.name}`}
@@ -19,7 +18,7 @@ export const ProductPreview = ({ products }: { products: Product[] }) => {
                             <h2>{name}</h2>
                             <RatingAverage reviews={reviews} />
                             <h2>{price}</h2>
-                            <p>{description}</p>
+                            <p>{summary}</p>
                         </Link>
                     );
                 })}

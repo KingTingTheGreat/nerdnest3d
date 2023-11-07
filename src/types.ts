@@ -13,6 +13,7 @@ export type User = {
 export interface Product {
     id: string;
     name: string;
+    summary: string;
     description: string;
     features: string[];
     preview: Image;

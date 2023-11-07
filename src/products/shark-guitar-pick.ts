@@ -3,7 +3,9 @@ import { images } from './product-images/shark-guitar-pick/shark-guitar-pick-ima
 export const SHARK_GUITAR_PICK = {
     id: '2121',
     name: 'Shark Guitar Pick',
-    description: 'A guitar pick that has a shark imprint!',
+    summary: 'A guitar pick that has a shark imprint!',
+    description:
+        'Rock out with this shark guitar pick. Shred on guitar like a shark shreds waves!',
     features: [
         'Display a shark',
         'Precise guitar picking',

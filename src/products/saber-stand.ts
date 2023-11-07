@@ -3,7 +3,9 @@ import { images } from './product-images/saber-stand/saber-stand-images';
 export const SABER_STAND = {
     id: '0104',
     name: 'Saber Stand',
-    description: 'A novel way to display your most valued light swords!',
+    summary: 'A novel way to display your light swords!',
+    description:
+        'A novel way to display your most valued light swords. You can customize the look to match your style!',
     features: [
         'Displays your light swords',
         'Easily attaches and detaches from the wall',

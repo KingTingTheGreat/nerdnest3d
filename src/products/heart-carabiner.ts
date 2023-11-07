@@ -3,7 +3,9 @@ import { images } from './product-images/heart-carabiner/heart-carabiner-images'
 export const HEART_CARABINER = {
     id: '6969',
     name: 'Heart Carabiner',
-    description: 'Always feel loved with this on your bag!',
+    summary: 'Always feel loved with this unique carabiner!',
+    description:
+        'A cute heart-shaped carabiner with threaded closure. Attach light objects to your bag, clothes, or keys!',
     features: ['Attach light objects', 'A great gift', 'Fashionable', 'Pretty'],
     preview: images[0],
     images: images,

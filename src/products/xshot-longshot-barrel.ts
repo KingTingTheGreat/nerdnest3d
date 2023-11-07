@@ -3,8 +3,9 @@ import { images } from './product-images/xshot-longshot-barrel/xshot-longshot-ba
 export const XSHOT_LONGSHOT_BARREL = {
     id: '2995',
     name: 'Xshot Longshot Barrel',
+    summary: 'Install a longer barrel in your blaster!',
     description:
-        'Allows for the installation of a longer barrel in your Xshot Longshot blaster!',
+        'Allows you to install a longer barrel Xshot Longshot blaster, improving accuracy and fps.',
     features: [
         'Use a longer barrel',
         'Increase fps',
