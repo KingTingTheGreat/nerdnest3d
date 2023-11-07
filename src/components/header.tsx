@@ -12,13 +12,6 @@ export const Header = ({ cart, user }: { cart: Cart; user?: User }) => {
             <NavigationMenu.Root className="">
                 <NavigationMenu.List className="flex gap-[10px] items-center justify-between text-xl">
                     <NavigationMenu.Item key="about" className="">
-                        {/* <NavigationMenu.Link
-                            className="flex items-center pr-5 text-white hover:text-yellow"
-                            // target="_blank"
-                            href="/about-us"
-                        >
-                            About us
-                        </NavigationMenu.Link> */}
                         <Link
                             to="/about-us"
                             className="flex items-center pr-5 text-white hover:text-yellow"
