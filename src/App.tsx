@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { ProductPage } from './components/product-page';
 import { Products, ProductsById } from './data';
 import { user } from './data';
+import { AboutUs } from './components/about-us';
 
 function App() {
     const [cart, addToCart] = useCart();
@@ -25,6 +26,7 @@ function App() {
                             path="/products/:productName"
                             element={<ProductPage addToCart={addToCart} />}
                         />
+                        <Route path="/about-us" element={<AboutUs />} />
                     </Routes>
                 </main>
 

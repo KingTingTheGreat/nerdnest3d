@@ -9,6 +9,11 @@ import { SCROOGE } from './users/scrooge';
 
 import { Product } from './types';
 
+import { NerdBird } from './types';
+import { JTing } from './nerd-birds/jting';
+import { RNaeem } from './nerd-birds/rnaeem';
+import { PHuded } from './nerd-birds/phuded';
+
 export const Products = [
     RUBBER_DUCKY,
     SABER_STAND,
@@ -32,3 +37,5 @@ for (const product of Products) {
 export function user() {
     return SCROOGE;
 }
+
+export const NerdBirds: NerdBird[] = [JTing, RNaeem, PHuded];

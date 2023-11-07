@@ -34,3 +34,10 @@ export type Review = {
     date: number;
     text?: string;
 };
+
+export type NerdBird = {
+    name: string;
+    picture: Image;
+    bio: string;
+    socials?: string[];
+};
