@@ -3,6 +3,7 @@ import type { Cart, User } from '../types';
 import { CartIcon, UserIcon } from './icons';
 import { CartDetails, UserDetails } from './details';
 import { Logo } from './logo';
+import { Link } from 'react-router-dom';
 
 export const Header = ({ cart, user }: { cart: Cart; user?: User }) => {
     return (
@@ -11,13 +12,19 @@ export const Header = ({ cart, user }: { cart: Cart; user?: User }) => {
             <NavigationMenu.Root className="">
                 <NavigationMenu.List className="flex gap-[10px] items-center justify-between text-xl">
                     <NavigationMenu.Item key="about" className="">
-                        <NavigationMenu.Link
+                        {/* <NavigationMenu.Link
                             className="flex items-center pr-5 text-white hover:text-yellow"
-                            href="https://github.com/KingTingTheGreat/nerdnest3d"
-                            target="_blank"
+                            // target="_blank"
+                            href="/about-us"
                         >
                             About us
-                        </NavigationMenu.Link>
+                        </NavigationMenu.Link> */}
+                        <Link
+                            to="/about-us"
+                            className="flex items-center pr-5 text-white hover:text-yellow"
+                        >
+                            About us
+                        </Link>
                     </NavigationMenu.Item>
 
                     <NavigationMenu.Item key="cart" className="relative flex">

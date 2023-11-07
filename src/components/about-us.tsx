@@ -10,13 +10,22 @@ export const AboutUs = () => {
                 We are a team of undergraduate developers passionate about our
                 so-called "nerdy" hobbies
             </p>
+            <a
+                href="https://github.com/KingTingTheGreat/nerdnest3d"
+                target="_blank"
+                className="hover:text-yellow"
+            >
+                Check out our GitHub!
+            </a>
             <div className="flex flex-row justify-center w-80%">
                 {NerdBirds.map(function (NerdBird) {
                     const { name, picture, bio, socials } = NerdBird;
                     return (
-                        <div className="flex flex-col items-center w-25%">
+                        <div className="flex flex-col items-center w-25% m-5 rounded-lg p-5 bg-white">
                             <h2 className="text-xl">{name}</h2>
-                            <Preview image={picture} />
+                            <div className="w-85%">
+                                <Preview image={picture} />
+                            </div>
                             <p>{bio}</p>
                         </div>
                     );
