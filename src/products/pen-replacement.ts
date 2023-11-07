@@ -33,5 +33,5 @@ export const PEN_REPLACEMENT = {
     ],
     price: 8.95,
     sizes: ['S', 'M', 'L', 'XL'],
-    colors: ['glow in the dark green', 'white', 'black', 'blue'],
+    colors: ['glow green', 'white', 'black', 'blue'],
 };
