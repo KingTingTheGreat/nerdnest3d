@@ -38,8 +38,8 @@ export const Images = ({ images }: { images: Image[] }) => {
                         className={
                             'h-full border-4 rounded p-1 ' +
                             (i === activeIndex
-                                ? 'border-gray-light'
-                                : 'border-black')
+                                ? 'border-black'
+                                : 'border-gray-light')
                         }
                         key={i}
                         ratio={1 / 1}
