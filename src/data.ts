@@ -24,6 +24,10 @@ for (const product of Products) {
     // PruductsByName[product.name] = product;
     ProductsById[product.id] = product;
 }
+export const ProductsByName: { [name: string]: Product } = {};
+for (const product of Products) {
+    ProductsByName[product.name] = product;
+}
 
 export function user() {
     return SCROOGE;

@@ -22,7 +22,7 @@ function App() {
                             element={<ProductPreview products={Products} />}
                         />
                         <Route
-                            path="/products/:productId"
+                            path="/products/:productName"
                             element={<ProductPage addToCart={addToCart} />}
                         />
                     </Routes>

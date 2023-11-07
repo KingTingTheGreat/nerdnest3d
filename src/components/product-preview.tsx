@@ -12,7 +12,7 @@ export const ProductPreview = ({ products }: { products: Product[] }) => {
                     product;
                 return (
                     <Link
-                        to={`/products/${product.id}`}
+                        to={`/products/${product.name}`}
                         className="bg-white flex flex-col p-4 m-2 w-15% min-w-10vw hover:shadow-2xl hover:outline-black transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-104"
                     >
                         <Preview image={preview} />

@@ -3,7 +3,7 @@ import * as ToggleGroup from '@radix-ui/react-toggle-group';
 import { RatingAverage } from './reviews';
 import type { CartItem, Product } from '../types';
 import { useParams } from 'react-router-dom';
-import { ProductsById } from '../data';
+import { ProductsById, ProductsByName } from '../data';
 import { Images } from './images';
 
 export const ProductPage = ({
@@ -11,11 +11,11 @@ export const ProductPage = ({
 }: {
     addToCart: (item: CartItem) => void;
 }) => {
-    const { productId } = useParams();
+    const { productName } = useParams();
 
-    if (!productId) return null;
+    if (!productName) return null;
 
-    const product = ProductsById[productId];
+    const product = ProductsByName[productName];
     const [size, setSize] = useState('');
     const [color, setColor] = useState('');
     const [quantity, setQuantity] = useState(1);
