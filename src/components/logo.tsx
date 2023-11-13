@@ -1,11 +1,11 @@
-import { Link } from 'react-router-dom';
+import Link from "next/link";
 
 export function Logo() {
-    return (
-        <Link to="/">
-            <h1 className="text-logo-purple text-4xl font-bold leading-[28px]">
-                <span className="text-logo-green">NerdNest</span>3D
-            </h1>
-        </Link>
-    );
+	return (
+		<Link href="/">
+			<h1 className="text-purple-500 text-4xl font-bold leading-[28px]">
+				<span className="text-green-500">NerdNest</span>3D
+			</h1>
+		</Link>
+	);
 }

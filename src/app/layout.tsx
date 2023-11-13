@@ -1,0 +1,22 @@
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import './globals.css';
+import { Footer } from '@/components/footer';
+const inter = Inter({ subsets: ['latin'] });
+
+export const metadata: Metadata = {
+    title: 'NerdNest3D',
+    description: 'our super duper cool website',
+};
+
+export default function RootLayout({
+    children,
+}: {
+    children: React.ReactNode;
+}) {
+    return (
+        <html lang="en">
+            <body className="flex flex-col">{children}</body>
+        </html>
+    );
+}

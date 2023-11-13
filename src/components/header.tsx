@@ -3,7 +3,7 @@ import type { Cart, User } from '../types';
 import { CartIcon, UserIcon } from './icons';
 import { CartDetails, UserDetails } from './details';
 import { Logo } from './logo';
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 export const Header = ({ cart, user }: { cart: Cart; user?: User }) => {
     return (
@@ -13,7 +13,7 @@ export const Header = ({ cart, user }: { cart: Cart; user?: User }) => {
                 <NavigationMenu.List className="flex gap-[10px] items-center justify-between text-xl">
                     <NavigationMenu.Item key="about" className="">
                         <Link
-                            to="/about-us"
+                            href="/about-us"
                             className="flex items-center pr-5 text-white hover:text-yellow"
                         >
                             About us
