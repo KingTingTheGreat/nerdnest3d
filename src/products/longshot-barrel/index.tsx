@@ -9,11 +9,13 @@ const images: React.ReactElement[] = [
         src={img1}
         alt="Longshot Barrel 1"
         className="w-full h-full object-cover"
+        key="1"
     />,
     <Image
         src={img2}
         alt="Longshot Barrel 2"
         className="w-full h-full object-cover"
+        key="2"
     />,
 ];
 

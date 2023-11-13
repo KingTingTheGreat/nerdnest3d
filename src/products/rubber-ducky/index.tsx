@@ -12,26 +12,31 @@ const images: React.ReactElement[] = [
         src={img1}
         alt="Rubber Ducky 1"
         className="w-full h-full object-cover"
+        key="1"
     />,
     <Image
         src={img2}
         alt="Rubber Ducky 2"
         className="w-full h-full object-cover"
+        key="2"
     />,
     <Image
         src={img3}
         alt="Rubber Ducky 3"
         className="w-full h-full object-cover"
+        key="3"
     />,
     <Image
         src={img4}
         alt="Rubber Ducky 4"
         className="w-full h-full object-cover"
+        key="4"
     />,
     <Image
         src={img5}
         alt="Rubber Ducky 5"
         className="w-full h-full object-cover"
+        key="5"
     />,
 ];
 
