@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 export const Header = ({ cart, user }: { cart: Cart; user?: User }) => {
     return (
-        <header className="bg-gray-dark p-5 w-100 flex justify-between items-center">
+        <header className="fixed bg-gray-dark p-5 w-full flex justify-between items-center z-10">
             <Logo />
             <NavigationMenu.Root className="">
                 <NavigationMenu.List className="flex gap-[10px] items-center justify-between text-xl">

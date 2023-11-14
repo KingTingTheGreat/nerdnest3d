@@ -12,7 +12,7 @@ export const Images = ({ images }: { images: React.ReactElement[] }) => {
         activeIndex - 1 < 0 ? images.length - 1 : activeIndex - 1;
     console.log(activeIndex);
     return (
-        <div className="relative w-30vw">
+        <div className="relative w-[30em]">
             <AspectRatio.Root className="relative" key="active" ratio={1 / 1}>
                 <button
                     className=" absolute right-0 top-1/2 z-10 mr-2 h-8 w-8"

@@ -22,10 +22,10 @@ export const ProductPage = ({
     return (
         // <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-auto gap-2">
         <div className="flex justify-around">
-            <div className="flex justify-center gap-5 p-5 w-65% items-start">
+            <div className="flex justify-center gap-5 p-5 w-[50rem] items-start">
                 <Images images={product.images} />
             </div>
-            <div className="flex flex-col gap-5 p-5 w-35% items-start">
+            <div className="flex flex-col gap-5 p-5 w-[20rem]% items-start">
                 <h2 className="flex flex-col justify-between text-3xl font-normal">
                     <span>{product.name}</span>
                     <span>${product.price}</span>
