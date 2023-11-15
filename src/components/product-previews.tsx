@@ -6,8 +6,8 @@ import { RatingAverage } from './reviews';
 
 export const ProductPreviews = () => {
     return (
-        <div className="flex justify-center items-center">
-            <div className="flex flex-wrap justify-center w-90 bg-gray-white">
+        <div className="flex justify-center">
+            <div className="flex flex-wrap justify-center w-fit">
                 {Products.map(function (product: Product) {
                     const { id, preview, name, price, summary, reviews } =
                         product;
