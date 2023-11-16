@@ -7,7 +7,7 @@ export const AboutUs = () => {
             <h1 className="text-4xl p-2 m-1">Meet the NerdBirds!</h1>
             <p className=" text-xl m-1">
                 We are a team of undergraduate developers passionate about our
-                so-called &quot nerdy &quot hobbies.
+                so-called <q>nerdy</q> hobbies.
             </p>
             <a
                 href="https://github.com/KingTingTheGreat/nerdnest3d"
