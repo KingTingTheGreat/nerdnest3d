@@ -16,7 +16,7 @@ export const AboutUs = () => {
             >
                 Check out our GitHub!
             </a>
-            <div className="flex flex-row justify-center w-80%">
+            <div className="flex flex-wrap justify-center w-80%">
                 {NerdBirds.map(function (NerdBird) {
                     const { name, picture, bio } = NerdBird;
                     return (
