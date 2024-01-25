@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
-import { Footer } from '@/components/footer';
-const inter = Inter({ subsets: ['latin'] });
+import { Root } from '@/components/root';
+import { Analytics } from '@vercel/analytics/react';
 
 export const metadata: Metadata = {
     title: 'NerdNest3D',
@@ -15,8 +15,9 @@ export default function RootLayout({
     children: React.ReactNode;
 }) {
     return (
-        <html lang="en">
-            <body className="flex flex-col">{children}</body>
-        </html>
+        <Root>
+            {children}
+            <Analytics />
+        </Root>
     );
 }
