@@ -18,7 +18,6 @@ const ShopProduct: FC<pageProps> = ({ params }) => {
         <>
             <Header cart={cart} user={user} />
             <ProductPage product={product} addToCart={addToCart} />
-            <Footer />
         </>
     );
 };
