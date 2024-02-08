@@ -14,7 +14,6 @@ export default function Shop() {
             <main className="content-center">
                 <ProductPreviews />
             </main>
-            <Footer />
         </>
     );
 }

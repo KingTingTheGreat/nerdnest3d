@@ -14,7 +14,6 @@ export default function AboutUsPage() {
             <main className="content-center">
                 <AboutUs />
             </main>
-            <Footer />
         </>
     );
 }
