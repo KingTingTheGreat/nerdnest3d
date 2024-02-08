@@ -14,7 +14,6 @@ export default function Home() {
             <main className="content-center">
                 <ProductPreviews />
             </main>
-            <Footer />
         </>
     );
 }
